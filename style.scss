@@ -106,8 +106,8 @@ body {
         .fa-pen-to-square:hover {
           background: #292665;
         }
-        button.edit{
-            background: transparent;
+        button.edit {
+          background: transparent;
         }
       }
     }
@@ -119,7 +119,7 @@ body {
         background: #8758fe;
 
         .modal-header {
-            border-bottom: 0 !important;
+          border-bottom: 0 !important;
           .btn-close {
             padding: 0 !important;
             background: url("./images/close.svg") !important;
@@ -132,20 +132,23 @@ body {
             background: #8758fe;
             color: #fff;
             padding: 0.5rem;
+            &::selection {
+              background: #1c1a41 !important;
+            }
           }
         }
-        .modal-footer{
-            .btn-save{
-                background: #1c1a41;
-                color: #fff;
-                transition: 0.3s;
-            }
-            .btn-save:hover{
-                background: #292665;
-            }
-            .btn-secondary{
-                background: #484848;
-            }
+        .modal-footer {
+          .btn-save {
+            background: #1c1a41;
+            color: #fff;
+            transition: 0.3s;
+          }
+          .btn-save:hover {
+            background: #292665;
+          }
+          .btn-secondary {
+            background: #484848;
+          }
         }
       }
     }

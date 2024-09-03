@@ -137,6 +137,12 @@ body {
   color: #fff;
   padding: 0.5rem;
 }
+.container .modal .modal-dialog .modal-content .modal-body input::-moz-selection {
+  background: #1c1a41 !important;
+}
+.container .modal .modal-dialog .modal-content .modal-body input::selection {
+  background: #1c1a41 !important;
+}
 .container .modal .modal-dialog .modal-content .modal-footer .btn-save {
   background: #1c1a41;
   color: #fff;
