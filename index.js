@@ -21,7 +21,7 @@ function check() {
                 <div class="w-50 img-warapper">
                       <img
                         class="w-100"
-                        src="./images/icon-empty.41c83759.svg"
+                        src="./assets/images/icon-empty.41c83759.svg"
                         alt="Empty List"
                         draggable="false"
                       />
