@@ -1,7 +1,7 @@
 # 📝 Get Things Done! - A Feature-Rich Todo App
 
 ![Todo App Screenshot 1](./assets/images/{51C06301-4F77-4B14-9225-3366AB6C070D}.png)
-![Todo App Screenshot 2](./assets/images/{6DE92906-4F64-4195-8E12-172ECB5C00AD}.png)
+<!-- ![Todo App Screenshot 2](./assets/images/{6DE92906-4F64-4195-8E12-172ECB5C00AD}.png) -->
 
 ## 🌟 Features
 
