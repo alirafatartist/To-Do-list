@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -16,9 +16,22 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
     <!-- custom css -->
     <link rel="stylesheet" href="style.css" />
-    <title>To-DO List</title>
+    <title>Todo App</title>
   </head>
   <body>
+    <!-- <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="liveToast" class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#ecb61c"></rect></svg>
+          <strong class="me-auto">Alert</strong>
+          <small>just now</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          Please enter your task in task input !
+        </div>
+      </div>
+    </div> -->
     <div class="container px-md-5 d-flex align-items-center flex-column">
       <h1>Get Things Done !</h1>
       <div class="add-input d-flex align-items-center w-100 row">
@@ -45,7 +58,7 @@
       </div>
       <!-- Button trigger modal -->
 
-      <!-- Modal -->
+      <!--bootstrap Modal -->
       <div
         class="modal fade"
         id="staticBackdrop"
@@ -86,10 +99,60 @@
       </div>
     </div>
 
+    <!-- bootstrap toast -->
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div
+        id="liveToast"
+        class="toast fade hide"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="toast-header">
+          <svg
+            class="bd-placeholder-img rounded me-2"
+            width="20"
+            height="20"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            <rect width="100%" height="100%" fill="#007aff"></rect>
+          </svg>
+
+          <strong class="me-auto">Alert</strong>
+          <small>just now</small>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="#0055b2"
+            >
+              <path
+                d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="toast-body">Please provide your task ‼️</div>
+      </div>
+    </div>
+
     <!-- bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.8.0/dist/confetti.browser.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- custom script -->
     <script src="index.js"></script>
+    <!-- aduio fils -->
+    <audio id="checkSound" src="./assets/media/check.wav"></audio>
+    <audio id="addSound" src="./assets/media/add.mp3"></audio>
   </body>
 </html>

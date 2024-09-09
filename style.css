@@ -80,13 +80,38 @@ body {
   width: 1.5rem;
   height: 1.2rem;
 }
-.container .tasks .task .task-detalis input:checked + p {
+.container .tasks .task .task-detalis input:checked + div p {
   text-decoration: line-through;
   text-decoration-thickness: 4px;
   text-decoration-color: #1c1a41;
 }
-.container .tasks .task .task-detalis p {
+.container .tasks .task .task-detalis div {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+.container .tasks .task .task-detalis div p {
   max-width: 300px;
+}
+.container .tasks .task .task-detalis div p::-moz-selection {
+  background: #fff !important;
+  color: #8758fe !important;
+}
+.container .tasks .task .task-detalis div p::selection {
+  background: #fff !important;
+  color: #8758fe !important;
+}
+.container .tasks .task .task-detalis div code.date {
+  color: #1c1a41 !important;
+  margin-top: -3px;
+}
+.container .tasks .task .task-detalis div code.date::-moz-selection {
+  background: #fff !important;
+  color: #8758fe !important;
+}
+.container .tasks .task .task-detalis div code.date::selection {
+  background: #fff !important;
+  color: #8758fe !important;
 }
 .container .tasks .task .options {
   gap: 1rem;
@@ -153,6 +178,24 @@ body {
 }
 .container .modal .modal-dialog .modal-content .modal-footer .btn-secondary {
   background: #484848;
+}
+
+.toast-header {
+  background: #9cc1e1 !important;
+}
+.toast-header strong, .toast-header small {
+  color: #004ea3;
+}
+.toast-header .btn-close {
+  background-image: none;
+  transform: translateY(-5px);
+  width: 13px;
+}
+
+.toast-body {
+  background: #dfeefd !important;
+  border-bottom-left-radius: 0.375rem;
+  border-bottom-right-radius: 0.375rem;
 }
 
 @media (max-width: 575px) {
